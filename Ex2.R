@@ -1,11 +1,13 @@
-s = sd(sample)
-outliers_mean <- mean(sample)
-lower <- outliers_mean - 2 * s
-higher <- outliers_mean + 2 * s
-outliers <- c()
-for (value in sample){
-  if (value < lower | value > higher){
-    outliers <- append(outliers, value)
+n=as.numeric(readline())
+10
+l=as.numeric(readline())
+5
+poss = function(l, n)
+{
+  p=dpois(1:n, l)
+  for (i in 1:n)
+  {
+    print(p[i])
   }
+  barplot(p)
 }
-outliers
