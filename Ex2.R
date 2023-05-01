@@ -1,13 +1,13 @@
 n=as.numeric(readline())
 10
-l=as.numeric(readline())
-5
-poss = function(l, n)
+p=as.numeric(readline())
+0.5
+geo = function(p, n)
 {
-  p=dpois(1:n, l)
+  pr=dgeom(1:n, p)
   for (i in 1:n)
   {
-    print(p[i])
+    print(pr[i])
   }
-  barplot(p)
+  barplot(pr)
 }
