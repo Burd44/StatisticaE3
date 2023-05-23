@@ -1,5 +1,5 @@
-#exercitiul 1
-#a)
+#Exercitiul 1 a
+
 find_M <- function(x, k)
 {
   n <- length(x)
@@ -19,9 +19,9 @@ find_M <- function(x, k)
 x <- c(1, 2, 3, 4)
 k <- 100
 find_M(x, k)
-#b) 1/2^k < 10^(-7), k > log(1/10^(-7))/ log(2), putem uti;iza funtia ceiling pt a obtine cea mai mica valoare intreaga ai mare decat log(1/10^(-7))/ log(2), astfel k=24
 
-#exercitiul 2
+#Exercitiul 2
+
 element_ith <- function(i,A)
 {
   n <- length(A)
@@ -49,8 +49,8 @@ A <- c(1, 2, 3, 4)
 i <- 2
 element_ith(i, A)
 
-#exercitiul 3
-#a)
+#Exercitiul 3 a
+
 monte_carlo <- function(S, a)
 {
   n <- length(S)
@@ -65,7 +65,8 @@ S <- c(1, 2, 3, 4)
 a <- 0.4
 monte_carlo(S, a)
 
-#b)
+#Exercitiul 3 b
+
 monte_carlo <- function(S, a)
 {
   n <- length(S)
