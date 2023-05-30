@@ -67,16 +67,6 @@ monte_carlo(S, a)
 
 #Exercitiul 3 b
 
-monte_carlo <- function(S, a)
-{
-  n <- length(S)
-  m <- floor(a * log(n))
-  S1 <- sample(S, m)
-  S2 <- sort(S1)
-  m_index <- ceiling(m / 2)
-  m_value <- S2[m_index]
-  return(m_value)
-}
 min <- function(a, tprob)
 {
   n <- 1
