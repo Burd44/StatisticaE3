@@ -36,7 +36,7 @@ patrulater_area = function(N)
   {
     x = runif(1, 0, 3);
     y = runif(1, -4, 2);
-    if(x*x + y*y <= 1)
+    if(3*y <= x + 6 & y <= 12 - 3*x)
       N_C = N_C + 1;
   }
   return(4*N_C/N);
