@@ -4,8 +4,10 @@ a=c(2, 4, 10);
 
 Volume = function(N, a) 
 {
+  errors=vector()
   for(k in 1:3)
   {
+    actual_value = pi*(a[i]^2)/2
     for(o in 1:3)
     {
       N_C = 0;
@@ -14,10 +16,12 @@ Volume = function(N, a)
         x = runif(1, -sqrt(a[o]), sqrt(a[o]));
         y = runif(1, -sqrt(a[o]), sqrt(a[o]));
         z = runif(1, 0, a[o]);
-        if(x*x + y*y + z*z <= 1)
+        if(x3 >= x^2 + y^2 & z <= a[o])
           N_C = N_C + 1;
       }
-      print(4*N_C/N[k]);
+      estimate_value = (4*a^3*N_C)/N[j]
+      relative_error = abs(estimate_value - actual_value)/actual_value
+      errors[j] = relative_error
     }
   }
 }
